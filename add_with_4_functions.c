@@ -1,9 +1,8 @@
-//Write a program to add two user input numbers using 4 functions.
 #include<stdio.h>
 int input()
 {
 int a,b;
-printf("enter a input value");
+printf("enter a input value:");
 scanf("%d",&a);
 return a;
 }
