@@ -1,4 +1,3 @@
-//WAP to find the distance between two point using 4 functions.
 #include <stdio.h>
 
 #include <math.h>
@@ -6,7 +5,7 @@
 double distance(double x1, double y1, double x2, double y2)
 {
    double d,dist;
-   d=((x2-x1)(x2-x1)) + ((y2-y1)(y2-y1));
+   d=((x2-x1)*(x2-x1)) + ((y2-y1)*(y2-y1));
    dist = sqrt(d);
    return dist;
 }
