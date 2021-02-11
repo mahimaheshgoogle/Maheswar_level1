@@ -1,17 +1,20 @@
-
 #include<stdio.h>
-int vol(int m , int d , int b);
-int main();
-    {
-    int m , int d , int b;
-printf("enter m,d,b in order");
-    scanf("%d,%d,%d",&m,&d,&b);
-    int volume = vol(h,d,b);
-    printf("the volume of the tromboloid is %d", volume); 
-    return 0;
-   }
-int vol(int m , int d , int b);
+
+int main()
 {
- return 1/3 * ((m * d * b ) + (d / b));
-return 0;
+  float h,b,d,v;
+
+  printf("Enter height: \n");
+  scanf("%f",&h);
+
+  printf("Enter breadth: \n");
+  scanf("%f",&b);
+
+  printf("Enter depth: \n");
+  scanf("%f",&d);
+
+  v = 0.3333 *((h*d*b)+(d/b));
+
+  printf("The volume of tromboloid is %f",v);
+  return 0;
 }
