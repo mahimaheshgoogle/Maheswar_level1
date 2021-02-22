@@ -1,31 +1,33 @@
 //Write a program to find the sum of n different numbers using 4 functions
-#include<stdio.h>
-int input(int n)
+#include <stdio.h>
+int input()
 {
-  printf("Enter the number of elements: ");
-  scanf("%d",&n);
-  return n;
+    int n;
+    printf("Enter the no.of elements: ");
+    scanf("%d",&n);
+    return n;
 }
-int Sum()
+int Sum(int s)
 {
-int i,n,value,sum = 0;
-printf("Enter the elements to be added: ");
-  for(i = 1;i<=n;i++)
-   {
-    scanf("%d",&value);
-    sum = sum+value;
+    int i,sum = 0,num;
+
+    for(i=1;i<=s;i++)
+    {
+     printf("Enter the number %d to add:",i);
+     scanf("%d",&num);
+     sum=sum+num;
     }
     return sum;
 }
-void output(int sum)
+void Output(int s,int B)
 {
-printf("Sum of n numbers are: %d\n",sum);
+    printf("Sum of the %d numbers is %d",s,B);
 }
 int main()
 {
-	int num,sum,n,s;
-	input(n);
-	Sum();
-	output(sum);
-	return 0;
+    int s,B;
+    s=input();
+    A=Sum(s);
+    Output(s,B);
+    return 0;
 }
