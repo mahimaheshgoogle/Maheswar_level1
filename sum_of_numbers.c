@@ -6,13 +6,16 @@ int input(int n)
   scanf("%d",&n);
   return n;
 }
+int Sum()
+{
 int i,n,value,sum = 0;
 printf("Enter the elements to be added: ");
-for(i = 1;i<=n;i++)
+  for(i = 1;i<=n;i++)
    {
     scanf("%d",&value);
     sum = sum+value;
     }
+    return sum;
 }
 void output(int sum)
 {
@@ -21,8 +24,8 @@ printf("Sum of n numbers are: %d\n",sum);
 int main()
 {
 	int num,sum,n,s;
-	int(n);
-	sum();
+	input(n);
+	Sum();
 	output(sum);
 	return 0;
 }
