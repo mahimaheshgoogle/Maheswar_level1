@@ -27,7 +27,7 @@ int main()
 {
     int s,B;
     s=input();
-    A=Sum(s);
+    B=Sum(s);
     Output(s,B);
     return 0;
 }
