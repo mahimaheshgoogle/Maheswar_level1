@@ -1,4 +1,3 @@
-//WAP to find the sum of n fractions.
 #include<stdio.h>
 typedef struct
 {
@@ -14,10 +13,11 @@ return n;
 }
 int input(int n,fraction a[n])
 {
+
 for(int i = 0;i<n;i++)
  {
-   printf("Enter the  %d numerator and denominator :",i+1);
-   scanf("%d%d",&[i].nume,&a[i].deno);
+   printf("Enter the %d numerator and denominator of fraction :",i+1);
+   scanf("%d%d",&a[i].nume,&a[i].deno);
    }
 }
 fraction sum(int n,fraction a[n])
@@ -25,13 +25,13 @@ fraction sum(int n,fraction a[n])
 int numerator = 0, denominator = 1;
 for(int i=0;i<n;i++)
 {
-denominator* = a[i].deno;
+denominator*= a[i].deno;
 }
 for (int i=0;i<n;i++)
 {
 numerator +=(a[i].nume)*(denominator/a[i].deno);
 }
-fraction add={numerator,denominator];
+fraction add={numerator,denominator};
 int gcd=1;
 for (int i=1;i<=add.nume&&i<=add.deno;i++)
 {
@@ -40,11 +40,11 @@ for (int i=1;i<=add.nume&&i<=add.deno;i++)
 gcd=i;
 }
 }
-add.nume=add.num/gcd;
-add.den0=add.deno/gcd;
+add.nume=add.nume/gcd;
+add.deno=add.deno/gcd;
 return add;
 }
-void display(intb n,fraction add)
+void display(int n,fraction add)
 {
 printf("the sum of %d fractions entered is %d/%d",n,add.nume,add.deno);
 }
@@ -58,3 +58,4 @@ fraction result=sum(n,a);
 display(n,result);
 return 0;
 }
+
